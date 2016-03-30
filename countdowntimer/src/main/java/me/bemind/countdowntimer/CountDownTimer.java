@@ -29,6 +29,7 @@ public abstract class CountDownTimer {
     private static final java.lang.String REMAINING_MILLIS_KEY = "remaining_mills_key";
     private static final int DURING = 1;
     private static final int END = 2;
+    private static final long ONE_SECOND = 1000;
     private Long millisInFuture, countDownInterval;
 
     private Thread thread;
@@ -42,6 +43,35 @@ public abstract class CountDownTimer {
         this.countDownInterval = countDownInterval;
         setHandler();
         setThread();
+    }
+
+
+    /**
+     * Constructor with one parameter.
+     *
+     * count down interval: 1000 millis (one second)
+     *
+     * @param millisInFuture
+     */
+    public CountDownTimer(Long millisInFuture){
+        this(millisInFuture,ONE_SECOND);
+    }
+
+    /**
+     * Contructor expressed in seconds
+     * @param seconds to start count down
+     */
+    public CountDownTimer(int seconds){
+        this((long) (seconds*1000),ONE_SECOND);
+    }
+
+    /**
+     * standard constructor in seconds
+     * @param secondsInFuture
+     * @param countDownInterval
+     */
+    public CountDownTimer(int secondsInFuture,int countDownInterval){
+        this((long)(secondsInFuture*1000),(long)(countDownInterval*1000));
     }
 
     private void setHandler() {
