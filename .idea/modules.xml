@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CountDownTimerApplication.iml" filepath="$PROJECT_DIR$/CountDownTimerApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/count-down-timer.iml" filepath="$PROJECT_DIR$/count-down-timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/countdowntimer/countdowntimer.iml" filepath="$PROJECT_DIR$/countdowntimer/countdowntimer.iml" />
       <module fileurl="file://$PROJECT_DIR$/countdowntimer/countdowntimer.iml" filepath="$PROJECT_DIR$/countdowntimer/countdowntimer.iml" />
     </modules>
   </component>
